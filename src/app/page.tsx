@@ -67,7 +67,7 @@ export default function Home() {
           <img
             src="/live-3.jpg"
             alt=""
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-[center_30%]"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black" />
         </div>
