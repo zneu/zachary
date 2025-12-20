@@ -13,6 +13,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://zacharyneumann.com"),
   title: "Zachary Neumann | Founder & CEO, Audio Alchemy | AI Pioneer",
   description: "Founder building the future of human potential through AI. Former U.S. Government tech lead. Artist performing at Burning Man & Envision Festival. Scaling AI products to millions.",
   keywords: [
