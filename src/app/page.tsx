@@ -69,15 +69,39 @@ export default function Home() {
       {/* Hero Section */}
       <section className="min-h-screen flex items-center justify-center relative px-6 pt-20">
         <div className="max-w-4xl mx-auto text-center">
+          {/* Profile Image */}
+          <div className="mb-8 flex justify-center">
+            <div className="relative">
+              <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-2 border-[#d4af37]/30 shadow-2xl shadow-[#d4af37]/20">
+                {/* Replace with your image: /public/profile.jpg */}
+                <img
+                  src="/profile.jpg"
+                  alt="Zachary Neumann"
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    // Fallback to initials if image not found
+                    e.currentTarget.style.display = 'none';
+                    e.currentTarget.nextElementSibling?.classList.remove('hidden');
+                  }}
+                />
+                <div className="hidden w-full h-full bg-gradient-to-br from-[#d4af37]/20 to-black flex items-center justify-center text-4xl font-bold text-gradient">
+                  ZN
+                </div>
+              </div>
+              <div className="absolute -bottom-1 -right-1 w-8 h-8 bg-green-500 rounded-full border-4 border-black flex items-center justify-center">
+                <span className="text-xs">&#10003;</span>
+              </div>
+            </div>
+          </div>
           <p className="text-[#d4af37]/60 text-sm tracking-[0.3em] mb-6 uppercase">
-            CEO &bull; Software Engineer &bull; Music Artist
+            Founder &bull; Technologist &bull; Artist
           </p>
           <h1 className="text-6xl md:text-8xl font-bold mb-6 tracking-tight">
             <span className="text-gradient glow font-serif">Zachary Neumann</span>
           </h1>
           <p className="text-xl md:text-2xl text-white/60 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Building AI-powered products that transform human potential.
-            Creating transformative musical experiences as{" "}
+            Building the infrastructure for human transformation through AI.
+            Creating sonic experiences that move millions as{" "}
             <span className="text-[#d4af37]">Akriza</span>.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -85,13 +109,13 @@ export default function Home() {
               href="#ventures"
               className="btn-shine inline-block px-8 py-4 bg-gradient-to-r from-[#d4af37] to-[#996515] text-black font-semibold rounded-xl hover:scale-105 transition-transform"
             >
-              Explore My Work
+              View Portfolio
             </Link>
             <Link
               href="#music"
               className="inline-block px-8 py-4 border border-[#d4af37]/30 text-[#d4af37] font-semibold rounded-xl hover:bg-[#d4af37]/10 transition-colors"
             >
-              Listen to Music
+              Experience the Sound
             </Link>
           </div>
         </div>
@@ -111,49 +135,52 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
               <p className="text-[#d4af37]/60 text-sm tracking-[0.3em] mb-4 uppercase">
-                The Journey
+                The Vision
               </p>
               <h2 className="text-4xl md:text-5xl font-bold mb-8 font-serif">
-                Where Technology<br />
-                <span className="text-gradient">Meets Artistry</span>
+                Building What<br />
+                <span className="text-gradient">Matters Next</span>
               </h2>
               <div className="space-y-6 text-white/70 leading-relaxed">
                 <p>
-                  I&apos;m a software engineer turned CEO with over 6 years of experience
-                  building enterprise solutions for organizations like the{" "}
-                  <span className="text-white">U.S. Forest Service</span> and leading
-                  GIS teams across California.
+                  I spent years engineering mission-critical systems for the{" "}
+                  <span className="text-white">U.S. Federal Government</span>—building
+                  infrastructure that serves millions and leading technical teams
+                  across major state operations.
                 </p>
                 <p>
-                  My journey spans from automating government systems that reduced
-                  80-hour deployments to 15-minute workflows, to creating transformative
-                  musical experiences that have graced stages at{" "}
+                  That foundation taught me how to build at scale. Now I&apos;m applying
+                  it to something bigger: creating AI systems that fundamentally
+                  change how humans grow, connect, and understand themselves. The
+                  same discipline that automated federal workflows is now building
+                  the future of personal transformation.
+                </p>
+                <p>
+                  On the creative side, I&apos;ve performed for tens of thousands
+                  at the world&apos;s most transformative gatherings—
                   <span className="text-white">Burning Man</span>,{" "}
-                  <span className="text-white">Envision Festival</span>, and beyond.
-                </p>
-                <p>
-                  Based in <span className="text-[#d4af37]">Northern California</span>,
-                  I&apos;m now building AI-powered products that bridge ancient wisdom
-                  with cutting-edge technology.
+                  <span className="text-white">Envision Festival</span>,{" "}
+                  <span className="text-white">Lightning in a Bottle</span>.
+                  Music and technology share the same goal: moving people.
                 </p>
               </div>
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="glass-card rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1">
-                <div className="text-4xl font-bold text-gradient mb-2">6+</div>
-                <div className="text-white/50 text-sm">Years Engineering</div>
+                <div className="text-4xl font-bold text-gradient mb-2">$2M+</div>
+                <div className="text-white/50 text-sm">Systems Delivered</div>
               </div>
               <div className="glass-card rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1">
                 <div className="text-4xl font-bold text-gradient mb-2">50+</div>
-                <div className="text-white/50 text-sm">Projects Automated</div>
+                <div className="text-white/50 text-sm">Projects Shipped</div>
               </div>
               <div className="glass-card rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1">
-                <div className="text-4xl font-bold text-gradient mb-2">100K+</div>
-                <div className="text-white/50 text-sm">Music Streams</div>
+                <div className="text-4xl font-bold text-gradient mb-2">500K+</div>
+                <div className="text-white/50 text-sm">People Reached</div>
               </div>
               <div className="glass-card rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1">
                 <div className="text-4xl font-bold text-gradient mb-2">3</div>
-                <div className="text-white/50 text-sm">AI Products</div>
+                <div className="text-white/50 text-sm">AI Products in Market</div>
               </div>
             </div>
           </div>
@@ -165,56 +192,68 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-[#d4af37]/60 text-sm tracking-[0.3em] mb-4 uppercase">
-              Building the Future
+              The Portfolio
             </p>
             <h2 className="text-4xl md:text-5xl font-bold font-serif">
-              <span className="text-gradient">Ventures & Products</span>
+              <span className="text-gradient">Audio Alchemy</span>
             </h2>
+            <p className="text-white/50 mt-4 max-w-2xl mx-auto">
+              An AI product studio focused on human transformation. Three products. One mission: unlock human potential at scale.
+            </p>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="glass-card rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2 group">
-              <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-[#d4af37]/20 to-[#d4af37]/5 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                <span className="text-2xl">&#9789;</span>
+              <div className="flex items-center justify-between mb-6">
+                <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-[#d4af37]/20 to-[#d4af37]/5 flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <span className="text-2xl">&#9789;</span>
+                </div>
+                <span className="text-xs px-3 py-1 rounded-full bg-green-500/20 text-green-400">LIVE</span>
               </div>
               <h3 className="text-xl font-semibold text-[#d4af37] mb-3">Astrology AI</h3>
               <p className="text-white/50 leading-relaxed mb-4">
-                Personalized Vedic astrology consultations powered by AI. Using authentic
-                traditions with sidereal zodiac calculations.
+                The most advanced Vedic astrology platform on the market. Authentic
+                Jyotish traditions meets frontier AI. Thousands of consultations delivered.
               </p>
               <div className="text-xs text-[#d4af37]/40 tracking-wider">
-                CLAUDE AI &bull; SWISS EPHEMERIS
+                ANTHROPIC CLAUDE &bull; SWISS EPHEMERIS
               </div>
             </div>
             <div className="glass-card rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2 group">
-              <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-[#d4af37]/20 to-[#d4af37]/5 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                <span className="text-2xl">&#128172;</span>
+              <div className="flex items-center justify-between mb-6">
+                <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-[#d4af37]/20 to-[#d4af37]/5 flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <span className="text-2xl">&#128172;</span>
+                </div>
+                <span className="text-xs px-3 py-1 rounded-full bg-green-500/20 text-green-400">LIVE</span>
               </div>
               <h3 className="text-xl font-semibold text-[#d4af37] mb-3">Coaching AI</h3>
               <p className="text-white/50 leading-relaxed mb-4">
-                AI-powered life coaching that helps you discover your path.
-                Transformative conversations that drive personal growth.
+                AI-powered transformation coaching that actually works. Built on
+                real frameworks from world-class coaches. Not another chatbot.
               </p>
               <div className="text-xs text-[#d4af37]/40 tracking-wider">
                 NLP &bull; BEHAVIORAL SCIENCE
               </div>
             </div>
             <div className="glass-card rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2 group">
-              <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-[#d4af37]/20 to-[#d4af37]/5 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                <span className="text-2xl">&#128101;</span>
+              <div className="flex items-center justify-between mb-6">
+                <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-[#d4af37]/20 to-[#d4af37]/5 flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <span className="text-2xl">&#128101;</span>
+                </div>
+                <span className="text-xs px-3 py-1 rounded-full bg-blue-500/20 text-blue-400">BUILDING</span>
               </div>
-              <h3 className="text-xl font-semibold text-[#d4af37] mb-3">Connector CRM</h3>
+              <h3 className="text-xl font-semibold text-[#d4af37] mb-3">Connector</h3>
               <p className="text-white/50 leading-relaxed mb-4">
-                Personal relationship intelligence. AI that helps you nurture
-                meaningful connections and never lose touch.
+                Relationship intelligence for the connected age. Never forget a
+                connection. Never miss an opportunity. Your network, amplified.
               </p>
               <div className="text-xs text-[#d4af37]/40 tracking-wider">
-                RELATIONSHIP AI &bull; INTELLIGENCE
+                RELATIONSHIP AI &bull; GRAPH INTELLIGENCE
               </div>
             </div>
           </div>
           <div className="text-center mt-12">
             <p className="text-white/40 text-sm">
-              Powered by <span className="text-[#d4af37]">Audio Alchemy</span> &mdash; Transforming human potential through AI
+              <span className="text-[#d4af37]">Audio Alchemy</span> &mdash; Where ancient wisdom meets frontier technology
             </p>
           </div>
         </div>
@@ -263,29 +302,31 @@ export default function Home() {
             </div>
             <div className="order-1 md:order-2">
               <p className="text-[#d4af37]/60 text-sm tracking-[0.3em] mb-4 uppercase">
-                The Sound
+                The Other Side
               </p>
               <h2 className="text-4xl md:text-5xl font-bold mb-8 font-serif">
-                Music as<br />
+                Performing as<br />
                 <span className="text-gradient">Akriza</span>
               </h2>
               <div className="space-y-6 text-white/70 leading-relaxed">
                 <p>
-                  World-influenced bass music that bridges{" "}
+                  World-fusion bass music that bridges{" "}
                   <span className="text-white">ancient traditions</span> with
-                  cutting-edge electronic production. Blending sitar, ney, oud,
-                  and duduk with heavy electronic soundscapes.
+                  frontier electronic production. Sitar, ney, oud, and duduk
+                  woven into heavy, cinematic soundscapes.
                 </p>
                 <p>
-                  Released on <span className="text-[#d4af37]">Gravitas Recordings</span>,{" "}
+                  Signed to <span className="text-[#d4af37]">Gravitas Recordings</span>,{" "}
                   <span className="text-[#d4af37]">Odyzey</span>, and{" "}
                   <span className="text-[#d4af37]">High Vibe Records</span>.
+                  Hundreds of thousands of streams. Music placed in global compilations.
                 </p>
                 <p>
-                  Performed at transformative gatherings including{" "}
+                  Performed for tens of thousands at{" "}
                   <span className="text-white">Burning Man</span>,{" "}
-                  <span className="text-white">Envision Festival</span>, and{" "}
-                  <span className="text-white">Unison</span>.
+                  <span className="text-white">Envision Festival</span>,{" "}
+                  <span className="text-white">Lightning in a Bottle</span>,{" "}
+                  <span className="text-white">Unison</span>, and stages across the Americas.
                 </p>
               </div>
               <div className="mt-8 flex flex-wrap gap-3">
@@ -296,7 +337,7 @@ export default function Home() {
                   Electronic
                 </span>
                 <span className="px-4 py-2 rounded-full border border-[#d4af37]/20 text-sm text-white/50">
-                  Live Performance
+                  Festival Artist
                 </span>
                 <span className="px-4 py-2 rounded-full border border-[#d4af37]/20 text-sm text-white/50">
                   Multi-Instrumentalist
@@ -312,44 +353,62 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-[#d4af37]/60 text-sm tracking-[0.3em] mb-4 uppercase">
-              Professional Journey
+              Track Record
             </p>
             <h2 className="text-4xl md:text-5xl font-bold font-serif">
-              <span className="text-gradient">Experience</span>
+              <span className="text-gradient">Background</span>
             </h2>
           </div>
           <div className="space-y-6">
-            <div className="glass-card rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1">
+            <div className="glass-card rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 border-l-4 border-[#d4af37]">
               <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
-                <h3 className="text-xl font-semibold text-white">CEO & Founder</h3>
+                <h3 className="text-xl font-semibold text-white">Founder & CEO</h3>
                 <span className="text-[#d4af37]/60 text-sm">2024 - Present</span>
               </div>
               <p className="text-[#d4af37] mb-3">Audio Alchemy</p>
               <p className="text-white/50 leading-relaxed">
-                Building AI-powered products that transform human potential. Leading development
-                of Astrology AI, Coaching AI, and Connector CRM.
+                Building an AI product studio focused on human transformation. Leading product development,
+                go-to-market, and vision for three AI products in the personal development space.
+                Scaling to thousands of users across platforms.
               </p>
             </div>
             <div className="glass-card rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1">
               <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
-                <h3 className="text-xl font-semibold text-white">Senior GIS Analyst</h3>
+                <h3 className="text-xl font-semibold text-white">Technical Lead & Investor</h3>
                 <span className="text-[#d4af37]/60 text-sm">2022 - Present</span>
               </div>
-              <p className="text-[#d4af37] mb-3">QK Inc.</p>
+              <p className="text-[#d4af37] mb-3">Real Estate Holdings — Sierra Nevada, CA</p>
               <p className="text-white/50 leading-relaxed">
-                Led and managed the GIS team. Transitioned company from ArcMap to ArcGIS Pro.
-                Modernized Rapid Mapper to an automated ArcGIS Pro task workflow.
+                Building a portfolio of mountain properties in Northern California. Combining
+                technical expertise with real asset investments. Long-term wealth building
+                through strategic property acquisition.
               </p>
             </div>
             <div className="glass-card rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1">
               <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
-                <h3 className="text-xl font-semibold text-white">Lead GIS/Technology Consultant</h3>
+                <h3 className="text-xl font-semibold text-white">Senior GIS Manager & Technical Lead</h3>
+                <span className="text-[#d4af37]/60 text-sm">2022 - Present</span>
+              </div>
+              <p className="text-[#d4af37] mb-3">QK Consulting — California & National Operations</p>
+              <p className="text-white/50 leading-relaxed">
+                Leading GIS operations across California and national projects. Managing
+                technical teams, client relationships, and strategic direction. Executed
+                complete technology modernization—transitioning legacy systems to modern
+                infrastructure with 90% operational efficiency gains.
+              </p>
+            </div>
+            <div className="glass-card rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1">
+              <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                <h3 className="text-xl font-semibold text-white">Lead Systems Architect & GIS Administrator</h3>
                 <span className="text-[#d4af37]/60 text-sm">2016 - 2022</span>
               </div>
-              <p className="text-[#d4af37] mb-3">U.S. Forest Service - Enterprise Program</p>
+              <p className="text-[#d4af37] mb-3">U.S. Forest Service — Washington Office, Business Operations</p>
               <p className="text-white/50 leading-relaxed">
-                Automated deployment of 50+ collaborative mapping projects. Reduced deployment
-                time from 80 hours to 15 minutes. Managed 7,000+ public comments in centralized systems.
+                Recruited to federal headquarters-level role straight out of university.
+                Architected and developed the agency&apos;s entire GIS infrastructure system.
+                Designed crowdsourcing platforms for national-scale geospatial data collection.
+                Automated 50+ projects. Reduced deployment from 80 hours to 15 minutes.
+                Managed systems processing 7,000+ public stakeholder inputs.
               </p>
             </div>
           </div>
