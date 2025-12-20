@@ -61,8 +61,17 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center relative px-6 pt-20">
-        <div className="max-w-4xl mx-auto text-center">
+      <section className="min-h-screen flex items-center justify-center relative px-6 pt-20 overflow-hidden">
+        {/* Hero Background Image */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src="/live-3.jpg"
+            alt=""
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black" />
+        </div>
+        <div className="max-w-4xl mx-auto text-center relative z-10">
           {/* Profile Image */}
           <div className="mb-8 flex justify-center">
             <div className="relative">
