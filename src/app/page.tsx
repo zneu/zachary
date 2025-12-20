@@ -193,14 +193,14 @@ export default function Home() {
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="glass-card rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2 group">
+            <a href="https://astrology.audioalchemycollective.com" target="_blank" rel="noopener noreferrer" className="glass-card rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2 group block">
               <div className="flex items-center justify-between mb-6">
                 <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-[#d4af37]/20 to-[#d4af37]/5 flex items-center justify-center group-hover:scale-110 transition-transform">
                   <span className="text-2xl">&#9789;</span>
                 </div>
                 <span className="text-xs px-3 py-1 rounded-full bg-green-500/20 text-green-400">LIVE</span>
               </div>
-              <h3 className="text-xl font-semibold text-[#d4af37] mb-3">Astrology AI</h3>
+              <h3 className="text-xl font-semibold text-[#d4af37] mb-3">Throne</h3>
               <p className="text-white/50 leading-relaxed mb-4">
                 The most advanced Vedic astrology platform on the market. Authentic
                 Jyotish traditions meets frontier AI. Thousands of consultations delivered.
@@ -208,8 +208,8 @@ export default function Home() {
               <div className="text-xs text-[#d4af37]/40 tracking-wider">
                 ANTHROPIC CLAUDE &bull; SWISS EPHEMERIS
               </div>
-            </div>
-            <div className="glass-card rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2 group">
+            </a>
+            <a href="https://coaching.audioalchemycollective.com" target="_blank" rel="noopener noreferrer" className="glass-card rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2 group block">
               <div className="flex items-center justify-between mb-6">
                 <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-[#d4af37]/20 to-[#d4af37]/5 flex items-center justify-center group-hover:scale-110 transition-transform">
                   <span className="text-2xl">&#128172;</span>
@@ -224,15 +224,15 @@ export default function Home() {
               <div className="text-xs text-[#d4af37]/40 tracking-wider">
                 NLP &bull; BEHAVIORAL SCIENCE
               </div>
-            </div>
-            <div className="glass-card rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2 group">
+            </a>
+            <a href="https://contacts.audioalchemycollective.com" target="_blank" rel="noopener noreferrer" className="glass-card rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2 group block">
               <div className="flex items-center justify-between mb-6">
                 <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-[#d4af37]/20 to-[#d4af37]/5 flex items-center justify-center group-hover:scale-110 transition-transform">
                   <span className="text-2xl">&#128101;</span>
                 </div>
                 <span className="text-xs px-3 py-1 rounded-full bg-blue-500/20 text-blue-400">BUILDING</span>
               </div>
-              <h3 className="text-xl font-semibold text-[#d4af37] mb-3">Connector</h3>
+              <h3 className="text-xl font-semibold text-[#d4af37] mb-3">Cortex</h3>
               <p className="text-white/50 leading-relaxed mb-4">
                 Relationship intelligence for the connected age. Never forget a
                 connection. Never miss an opportunity. Your network, amplified.
@@ -240,7 +240,7 @@ export default function Home() {
               <div className="text-xs text-[#d4af37]/40 tracking-wider">
                 RELATIONSHIP AI &bull; GRAPH INTELLIGENCE
               </div>
-            </div>
+            </a>
           </div>
           <div className="text-center mt-12">
             <p className="text-white/40 text-sm">
