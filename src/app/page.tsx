@@ -113,9 +113,9 @@ export default function Home() {
 
         {/* Scroll indicator */}
         <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-white/20 rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-[#d4af37]/50 rounded-full mt-2 animate-pulse" />
-          </div>
+          <svg className="w-6 h-6 text-[#d4af37]/60" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+          </svg>
         </div>
       </section>
 
