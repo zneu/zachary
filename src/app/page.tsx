@@ -230,7 +230,7 @@ export default function Home() {
                 <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-[#d4af37]/20 to-[#d4af37]/5 flex items-center justify-center group-hover:scale-110 transition-transform">
                   <span className="text-2xl">&#128101;</span>
                 </div>
-                <span className="text-xs px-3 py-1 rounded-full bg-blue-500/20 text-blue-400">BUILDING</span>
+                <span className="text-xs px-3 py-1 rounded-full bg-green-500/20 text-green-400">LIVE</span>
               </div>
               <h3 className="text-xl font-semibold text-[#d4af37] mb-3">Cortex</h3>
               <p className="text-white/50 leading-relaxed mb-4">
@@ -257,8 +257,12 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="order-2 md:order-1">
               <div className="glass-card rounded-3xl p-8 animate-pulse-glow">
-                <div className="aspect-square rounded-2xl bg-gradient-to-br from-[#d4af37]/20 to-black flex items-center justify-center mb-6 overflow-hidden">
-                  <div className="text-8xl opacity-30 animate-float">&#127926;</div>
+                <div className="aspect-square rounded-2xl bg-gradient-to-br from-[#d4af37]/20 to-black mb-6 overflow-hidden">
+                  <img
+                    src="/live-1.jpg"
+                    alt="Akriza performing live"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div className="flex justify-center gap-4">
                   <a
@@ -280,7 +284,7 @@ export default function Home() {
                     <SoundCloudIcon />
                   </a>
                   <a
-                    href="https://instagram.com/akriza.music"
+                    href="https://instagram.com/akrizamusic"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 rounded-full bg-[#E4405F]/20 text-[#E4405F] hover:bg-[#E4405F]/30 transition-colors"
@@ -447,7 +451,7 @@ export default function Home() {
               <GitHubIcon />
             </a>
             <a
-              href="https://instagram.com/akriza.music"
+              href="https://instagram.com/akrizamusic"
               target="_blank"
               rel="noopener noreferrer"
               className="p-4 rounded-full glass-card hover:border-[#d4af37]/40 transition-all hover:-translate-y-1"
