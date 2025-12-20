@@ -73,20 +73,11 @@ export default function Home() {
           <div className="mb-8 flex justify-center">
             <div className="relative">
               <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-2 border-[#d4af37]/30 shadow-2xl shadow-[#d4af37]/20">
-                {/* Replace with your image: /public/profile.jpg */}
                 <img
                   src="/profile.jpg"
                   alt="Zachary Neumann"
                   className="w-full h-full object-cover"
-                  onError={(e) => {
-                    // Fallback to initials if image not found
-                    e.currentTarget.style.display = 'none';
-                    e.currentTarget.nextElementSibling?.classList.remove('hidden');
-                  }}
                 />
-                <div className="hidden w-full h-full bg-gradient-to-br from-[#d4af37]/20 to-black flex items-center justify-center text-4xl font-bold text-gradient">
-                  ZN
-                </div>
               </div>
               <div className="absolute -bottom-1 -right-1 w-8 h-8 bg-green-500 rounded-full border-4 border-black flex items-center justify-center">
                 <span className="text-xs">&#10003;</span>
