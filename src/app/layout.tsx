@@ -80,7 +80,6 @@ const jsonLd = {
   url: "https://zacharyneumann.com",
   image: "https://zacharyneumann.com/profile.jpg",
   sameAs: [
-    "https://linkedin.com/in/zneumann",
     "https://github.com/zneu",
     "https://instagram.com/akrizamusic",
     "https://open.spotify.com/artist/akriza",
