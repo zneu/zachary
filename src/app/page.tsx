@@ -433,7 +433,7 @@ export default function Home() {
               <MailIcon />
             </a>
             <a
-              href="https://linkedin.com/in/zacharyneumann"
+              href="https://linkedin.com/in/zneumann"
               target="_blank"
               rel="noopener noreferrer"
               className="p-4 rounded-full glass-card hover:border-[#d4af37]/40 transition-all hover:-translate-y-1"
