@@ -82,7 +82,7 @@ const jsonLd = {
   sameAs: [
     "https://linkedin.com/in/zacharyneumann",
     "https://github.com/zneu",
-    "https://instagram.com/akriza.music",
+    "https://instagram.com/akrizamusic",
     "https://open.spotify.com/artist/akriza",
     "https://soundcloud.com/akriza"
   ],
