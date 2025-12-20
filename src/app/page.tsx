@@ -160,7 +160,7 @@ export default function Home() {
                 <div className="text-white/50 text-sm">Projects Shipped</div>
               </div>
               <div className="glass-card rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1">
-                <div className="text-4xl font-bold text-gradient mb-2">500K+</div>
+                <div className="text-4xl font-bold text-gradient mb-2">2M+</div>
                 <div className="text-white/50 text-sm">People Reached</div>
               </div>
               <div className="glass-card rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1">
@@ -461,7 +461,7 @@ export default function Home() {
             &copy; {new Date().getFullYear()} Zachary Neumann. All rights reserved.
           </div>
           <div className="text-[#d4af37]/40 text-sm tracking-widest">
-            GRASS VALLEY, CA
+            DENVER, CO
           </div>
         </div>
       </footer>
