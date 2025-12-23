@@ -391,6 +391,19 @@ export default function Home() {
             </div>
             <div className="glass-card rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1">
               <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                <h3 className="text-xl font-semibold text-white">Senior GIS Manager & Technical Lead</h3>
+                <span className="text-[#d4af37]/60 text-sm">2022 - Present</span>
+              </div>
+              <p className="text-[#d4af37] mb-3">Consultant — California & National Operations</p>
+              <p className="text-white/50 leading-relaxed">
+                Leading GIS operations across California and national projects. Managing
+                technical teams, client relationships, and strategic direction. Executed
+                complete technology modernization—transitioning legacy systems to modern
+                infrastructure with 90% operational efficiency gains.
+              </p>
+            </div>
+            <div className="glass-card rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1">
+              <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
                 <h3 className="text-xl font-semibold text-white">Lead Systems Architect & GIS Administrator</h3>
                 <span className="text-[#d4af37]/60 text-sm">2016 - 2022</span>
               </div>
