@@ -172,6 +172,10 @@ export default function Home() {
                 <div className="text-4xl font-bold text-gradient mb-2">2M+</div>
                 <div className="text-white/50 text-sm">People Reached</div>
               </div>
+              <div className="glass-card rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1">
+                <div className="text-4xl font-bold text-gradient mb-2">3</div>
+                <div className="text-white/50 text-sm">AI Products in Market</div>
+              </div>
             </div>
           </div>
         </div>
@@ -188,10 +192,7 @@ export default function Home() {
               <span className="text-gradient">Audio Alchemy</span>
             </h2>
             <p className="text-white/50 mt-4 max-w-2xl mx-auto">
-              An AI product studio focused on human transformation. One mission: unlock human potential at scale.
-            </p>
-            <p className="text-white/40 text-sm mt-3">
-              Click any product to explore
+              An AI product studio focused on human transformation. Three products. One mission: unlock human potential at scale.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
@@ -340,14 +341,6 @@ export default function Home() {
                   Multi-Instrumentalist
                 </span>
               </div>
-              <a
-                href="https://www.akriza.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-8 inline-block px-8 py-4 border border-[#d4af37]/30 text-[#d4af37] font-semibold rounded-xl hover:bg-[#d4af37]/10 transition-colors"
-              >
-                Visit akriza.com
-              </a>
             </div>
           </div>
         </div>
@@ -387,6 +380,19 @@ export default function Home() {
                 Building a portfolio of mountain properties in Northern California. Combining
                 technical expertise with real asset investments. Long-term wealth building
                 through strategic property acquisition.
+              </p>
+            </div>
+            <div className="glass-card rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1">
+              <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                <h3 className="text-xl font-semibold text-white">Senior GIS Manager & Technical Lead</h3>
+                <span className="text-[#d4af37]/60 text-sm">2022 - Present</span>
+              </div>
+              <p className="text-[#d4af37] mb-3">QK Consulting — California & National Operations</p>
+              <p className="text-white/50 leading-relaxed">
+                Leading GIS operations across California and national projects. Managing
+                technical teams, client relationships, and strategic direction. Executed
+                complete technology modernization—transitioning legacy systems to modern
+                infrastructure with 90% operational efficiency gains.
               </p>
             </div>
             <div className="glass-card rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1">
