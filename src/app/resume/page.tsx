@@ -33,14 +33,9 @@ export default function ResumePage() {
             >
               Get in Touch
             </Link>
-            <button
-              onClick={() => {
-                if (typeof window !== "undefined") window.print();
-              }}
-              className="hidden sm:inline-block text-sm px-4 py-2 border border-[#d4af37]/30 text-[#d4af37] rounded-lg hover:bg-[#d4af37]/10 transition-colors"
-            >
-              Print / Save PDF
-            </button>
+            <span className="hidden sm:inline-block text-sm text-white/40">
+              Press <kbd className="px-1.5 py-0.5 mx-0.5 text-[11px] border border-white/15 rounded bg-white/5">⌘P</kbd> to save as PDF
+            </span>
           </div>
         </div>
       </nav>
