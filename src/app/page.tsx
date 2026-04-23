@@ -53,6 +53,9 @@ export default function Home() {
             <Link href="#music" className="text-sm text-white/60 hover:text-white transition-colors link-hover">
               Music
             </Link>
+            <Link href="/resume" className="text-sm text-white/60 hover:text-white transition-colors link-hover">
+              Resume
+            </Link>
             <Link href="#contact" className="text-sm text-white/60 hover:text-white transition-colors link-hover">
               Contact
             </Link>
