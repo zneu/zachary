@@ -55,7 +55,7 @@ export default function ResumePage() {
             <span className="text-gradient font-serif">Zachary Neumann</span>
           </h1>
           <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-white/50">
-            <span>Livingston, TX</span>
+            <span>Austin, TX</span>
             <span className="hidden sm:inline text-white/20">·</span>
             <a
               href="https://www.zacharyneumann.com"

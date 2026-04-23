@@ -198,7 +198,7 @@ export default function Home() {
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
-            <a href="https://astrology.audioalchemycollective.com" target="_blank" rel="noopener noreferrer" className="glass-card rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2 group block">
+            <a href="https://astrology.alchemy.audio" target="_blank" rel="noopener noreferrer" className="glass-card rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2 group block">
               <div className="flex items-center justify-between mb-6">
                 <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-[#d4af37]/20 to-[#d4af37]/5 flex items-center justify-center group-hover:scale-110 transition-transform">
                   <span className="text-2xl">&#9789;</span>
@@ -480,7 +480,7 @@ export default function Home() {
             &copy; {new Date().getFullYear()} Zachary Neumann. All rights reserved.
           </div>
           <div className="text-[#d4af37]/40 text-sm tracking-widest">
-            DENVER, CO
+            AUSTIN, TX
           </div>
         </div>
       </footer>
